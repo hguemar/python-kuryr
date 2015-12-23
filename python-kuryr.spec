@@ -5,8 +5,8 @@
 %{!?upstream_version: %global upstream_version %{version}}
 
 Name:          python-%{srcname}
-Version:       0.1.0
-Release:       0.1%{?dist}
+Version:       XXX
+Release:       XXX{?dist}
 Summary:       Kuryr Docker Plugin
 Epoch:         1
 

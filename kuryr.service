@@ -5,7 +5,7 @@ Before=docker.target
 
 [Service]
 Type=simple
-User=docker
+User=root
 ExecStart=/usr/bin/kuryr-service --config-file /etc/kuryr/kuryr.conf
 KillMode=process
 
