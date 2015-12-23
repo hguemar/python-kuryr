@@ -6,9 +6,8 @@
 
 Name:          python-%{srcname}
 Version:       XXX
-Release:       XXX{?dist}
-Summary:       Kuryr Docker Plugin
-Epoch:         1
+Release:       XXX
+Summary:       Docker remote driver for OpenStack Neutron
 
 License:       ASL 2.0
 URL:           http://launchpad.net/kuryr
@@ -22,9 +21,6 @@ BuildRequires: python-pbr
 BuildRequires: python-setuptools
 BuildRequires: python-sphinx
 BuildRequires: systemd-units
-
-Summary:       Docker Plugin using Neutron as backend
-Group:         Applications/System
 
 Requires:      docker
 Requires:      python-babel
@@ -63,5 +59,5 @@ export SKIP_PIP_INSTALL=1
 # TODO(devvesa): skip this step until reno will be available on repositories
 # %doc %{docpath}
 %{python2_sitelib}/%{srcname}
-%{python2_sitelib}/%{srcname}-%{upstream_version}-py%{python2_version}.egg-info
+%{python2_sitelib}/%{srcname}-*.egg-info
 %{_bindir}/kuryr-server
