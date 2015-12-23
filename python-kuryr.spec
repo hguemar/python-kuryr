@@ -61,3 +61,5 @@ export SKIP_PIP_INSTALL=1
 %{python2_sitelib}/%{srcname}
 %{python2_sitelib}/%{srcname}-*.egg-info
 %{_bindir}/kuryr-server
+
+%changelog
